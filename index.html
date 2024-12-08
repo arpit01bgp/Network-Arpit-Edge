@@ -2,153 +2,248 @@
 <html lang="en">
 <head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1747203975928448"
      crossorigin="anonymous"></script>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Network Blog-Arpit</title>
-      <link rel="icon" type="image/x-icon" href="Blue Moon.png">
+    <title>Network Blog - Arpit</title>
+    <link rel="icon" type="image/x-icon" href="Blue Moon.png">
     <style>
-        /* CSS styles can be added here */
-        body {
-            font-family: Arial, sans-serif;
+        /* Global Styles */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #0c1a2b;
+            color: #ddd;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header and Navigation Bar */
         header {
-            font-family: Verdana;
-            color: #fff;
-            background-color: #B0E0E6;
-            padding: 20px;
+            background: url('https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg') no-repeat center center/cover;
+            height: 100vh;
+            color: white;
             text-align: center;
+            padding-top: 100px;
+            background-attachment: fixed;
+            position: relative;
         }
-        nav {
-            background-color: #444;
-            color: #fff;
-            padding: 10px 20px;
+
+        header h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+            letter-spacing: 2px;
+            margin-bottom: 20px;
         }
-        nav a {
-            color: #fff;
+
+        header p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+
+        /* Content Section */
+        section {
+            padding: 80px 20px;
+            background: #1c2b3a;
+            z-index: 5;
+        }
+
+        section h2 {
+            font-size: 3rem;
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+            text-shadow: 0 0 15px rgba(0, 123, 255, 0.8);
+        }
+
+        article {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: rgba(25, 35, 50, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        article:hover {
+            transform: translateY(-10px);
+        }
+
+        article h3 {
+            font-size: 2rem;
+            color: #007bff;
+        }
+
+        article p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Author Bio Section at the Bottom */
+        .author-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+            background: linear-gradient(135deg, #3b8d99, #6f8a7f);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .author-info img {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .author-info img:hover {
+            transform: scale(1.1);
+        }
+
+        .author-bio {
+            text-align: center;
+            color: white;
+        }
+
+        .author-bio h3 {
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+
+        .author-bio p {
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #0c1a2b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .terms-links a {
+            color: #007bff;
+            font-size: 1.1rem;
             text-decoration: none;
-            margin-right: 20px;
+            margin: 0 10px;
         }
-        nav a:hover {
+
+        .terms-links a:hover {
             text-decoration: underline;
         }
-        section {
-            padding: 20px;
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
+
+            article h3 {
+                font-size: 1.5rem;
+            }
+
+            .author-info {
+                flex-direction: column;
+                padding: 30px;
+            }
         }
-        article {
-            margin-bottom: 30px;
-        }
-        h2 {
-            color: #333;
-        }
-        p {
-            line-height: 1.5;
-        }
-        footer {
-            
-            
-            text-align: center;
-            padding: 10px;
-            
-            bottom: 0;
-            width: 100%;
-        }
+
     </style>
-  
-        
 </head>
-<body><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1747203975928448"
-     crossorigin="anonymous"></script>
+<body>
+    <!-- Header Section with Parallax Effect -->
     <header>
-        <h1>Network Blog-Arpit</h1>
+        <h1>Network Blog - Arpit</h1>
+        <p>Explore the World of Networking and Technology</p>
     </header>
-    
+
+    <!-- Main Content Section -->
     <section>
-        <article>
-            <h2>Introduction to Networks</h2>
-            <p><b>Definition:</b> A network is a collection of interconnected nodes or devices that communicate with each other to share resources, information, or services.</p>
+        <h2>Introduction to Networks</h2>
+
+        <article onclick="toggleContent(this)">
+            <h3>What is a Network?</h3>
+            <p>A network is a collection of interconnected devices that share resources and information with each other.</p>
+            <div class="full-content" style="display: none;">
+                <p>Detailed explanation of networks: A network can be any collection of devices such as computers, servers, and other hardware devices that are connected together. Networks enable devices to share data and resources, such as files, printers, and internet access. It can be categorized into different types such as LAN, WAN, MAN, and wireless networks.</p>
+            </div>
         </article>
-        <article>
-            <h2>Types of Networks</h2>
-            <p>
-                <b>LAN (Local Area Network):</b> Limited geographical area like a home, office, or school.<br>
-                <b>WAN (Wide Area Network):</b> Spans large distances, often connecting LANs across cities or countries.<br>
-                <b>MAN (Metropolitan Area Network):</b> Covers a city or a large campus area.<br>
-                <b>Wireless Networks:</b> Use radio waves or infrared signals for communication, such as Wi-Fi or Bluetooth.<br>
-                <b>Internet:</b> A global network of networks, connecting billions of devices worldwide.
-            </p>
+
+        <article onclick="toggleContent(this)">
+            <h3>Types of Networks</h3>
+            <p>Networks can vary in size from a local area network (LAN) to a large-scale internet system connecting millions of users globally.</p>
+            <div class="full-content" style="display: none;">
+                <p>There are several types of networks, including Local Area Networks (LAN), Wide Area Networks (WAN), Metropolitan Area Networks (MAN), and Wireless Networks. LANs typically cover a small area, while WANs can cover large geographical areas, such as entire cities or countries. MANs are in-between, covering areas like large campuses or cities.</p>
+            </div>
         </article>
-        <article>
-            <h2>Network Components</h2>
-            <p>
-                <b>Nodes:</b> Devices like computers, routers, switches, servers, and printers.<br>
-                <b>Links:</b> Physical connections like Ethernet cables or wireless connections.<br>
-                <b>Network Devices:</b> Hardware like routers, switches, and hubs that facilitate communication between nodes.<br>
-                <b>Protocols:</b> Rules and conventions governing communication between devices, such as TCP/IP, HTTP, and FTP.
-            </p>
+
+        <article onclick="toggleContent(this)">
+            <h3>Network Components</h3>
+            <p>From routers to switches, network components help devices communicate and share resources efficiently.</p>
+            <div class="full-content" style="display: none;">
+                <p>Network components include devices such as routers, switches, servers, and cables. Routers direct traffic within the network, while switches manage the data flow between connected devices. Servers store data and provide services to the network. Cables, both wired and wireless, facilitate the transmission of data across the network.</p>
+            </div>
         </article>
-        <article>
-            <h2>Network Topologies</h2>
-            <p>
-                <b>Star:</b> All nodes are connected to a central hub or switch.<br>
-                <b>Bus:</b> Nodes are connected in a linear fashion, sharing a single communication line.<br>
-                <b>Ring:</b> Nodes are connected in a circular configuration, with each node connecting to exactly two other nodes.<br>
-                <b>Mesh:</b> Each node is connected to every other node, providing redundancy and multiple paths for data.
-            </p>
+
+        <article onclick="toggleContent(this)">
+            <h3>Emerging Technologies</h3>
+            <p>New technologies like 5G and the Internet of Things (IoT) are revolutionizing how we connect and interact with networks.</p>
+            <div class="full-content" style="display: none;">
+                <p>Emerging technologies such as 5G and IoT (Internet of Things) are rapidly changing how networks are utilized. 5G offers faster speeds and more reliable connections, enabling new applications such as autonomous vehicles and real-time communications. IoT refers to interconnected devices, from smart home gadgets to industrial sensors, that communicate and exchange data over the internet.</p>
+            </div>
         </article>
-        <article>
-            <h2>Network Services</h2>
-            <p>
-                <b>File Sharing:</b> Sharing files and resources across a network.<br>
-                <b>Email:</b> Electronic mail communication between users.<br>
-                <b>Web Hosting:</b> Hosting websites and web applications on servers accessible via the internet.<br>
-                <b>Remote Access:</b> Accessing resources or systems from a remote location over a network.
-            </p>
-        </article>
-        <article>
-            <h2>Network Security</h2>
-            <p>
-                <b>Firewalls:</b> Protecting networks by filtering incoming and outgoing traffic.<br>
-                <b>Encryption:</b> Securing data transmission by encoding it to prevent unauthorized access.<br>
-                <b>Authentication:</b> Verifying the identity of users or devices before granting access to resources.<br>
-                <b>Intrusion Detection Systems (IDS):</b> Monitoring network traffic for suspicious activity or threats.
-            </p>
-        </article>
-        <article>
-            <h2>Emerging Technologies</h2>
-            <p>
-                <b>5G:</b> Next-generation mobile network technology offering faster speeds and lower latency.<br>
-                <b>Internet of Things (IoT):</b> Interconnected network of devices embedded with sensors and software for data exchange.<br>
-                <b>Software-Defined Networking (SDN):</b> Centralized control of network infrastructure through software, enabling automation and programmability.
-            </p>
-     
-        </article> <article>
-        <div class="container">
-    <div class="author-info">
-      <h2>About the Author</h2>
-      <div class="author-bio">
-      <img src="author.jpg" alt="Arpit Aanand" width="110mm" height="140mm">
-           
-        <p>Arpit Aanand</p>
-         <p></p>Student, Author, Programmer, Web developer.</p>
-        <p>Currently studying in Class 9 at A.D.Sarswati Vidya Mandir.</p>
-      </div>
-    </div>
-        </div></article>
-   
-  <a href="https://www.termsfeed.com/live/06b2a60f-554b-4b85-98a8-63928c6f6b62">Terms and Condition</a>&nbsp;
-        <a href="https://www.termsfeed.com/live/ebe1d831-c21f-45f8-8e57-d68186bdee2b">Privacy Policy</a>
-    </b>
     </section>
-     
-             
-          
-     
-     
+
+    <!-- Author Bio Section -->
+    <div class="author-info">
+        <img src="https://via.placeholder.com/180" alt="Arpit Aanand">
+        <div class="author-bio">
+            <h3>About Arpit Aanand</h3>
+            <p>Student, Author, Programmer, Web Developer</p>
+            <p>Currently studying in Class 9 at A.D. Sarswati Vidya Mandir</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
     <footer>
-        &copy; 2024 Edge. All rights reserved.
+        &copy; 2024 Network Blog. All rights reserved.
+        <div class="terms-links">
+            <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a>
+        </div>
     </footer>
+
+    <!-- JavaScript for Dynamic Content Toggle -->
+    <script>
+        function toggleContent(article) {
+            const fullContent = article.querySelector('.full-content');
+            if (fullContent.style.display === "none") {
+                fullContent.style.display = "block";
+                article.style.height = "auto"; // Adjust article height to show full content
+            } else {
+                fullContent.style.display = "none";
+                article.style.height = "120px"; // Default height when collapsed
+            }
+        }
+    </script>
 </body>
 </html>
