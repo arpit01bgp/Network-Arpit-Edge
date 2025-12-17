@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta name="google-adsense-account" content="ca-pub-1747203975928448"> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1747203975928448"
-     crossorigin="anonymous"></script><script async src="https://pagead2.goo-glesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1747203975928448"
-     crossorigin="anonymous"></script>
-
+    <meta name="google-adsense-account" content="ca-pub-1747203975928448">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1747203975928448" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Network Blog - Arpit</title>
     <link rel="icon" type="image/x-icon" href="Blue Moon.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
         /* Global Styles */
-        */ {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -89,13 +92,13 @@
             line-height: 1.6;
         }
 
-        /* Author Bio Section at the Bottom */
+        /* Author Bio Section */
         .author-info {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            margin-top: 50px;
+            margin: 50px 20px;
             background: linear-gradient(135deg, #3b8d99, #6f8a7f);
             padding: 40px;
             border-radius: 15px;
@@ -108,6 +111,7 @@
             height: 180px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
             transition: transform 0.3s ease-in-out;
+            object-fit: cover;
         }
 
         .author-info img:hover {
@@ -128,15 +132,83 @@
             font-size: 1.2rem;
         }
 
+        /* --- CONTACT REDIRECT SEGMENT (NEW) --- */
+        .contact-redirect-segment {
+            padding: 80px 20px;
+            background: #0c1a2b;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .redirect-card {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 50px 30px;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            transition: 0.4s;
+        }
+
+        .redirect-card:hover {
+            border-color: #007bff;
+            box-shadow: 0 10px 40px rgba(0, 123, 255, 0.2);
+        }
+
+        .redirect-card h3 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 15px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .redirect-card p {
+            color: #aaa;
+            font-size: 1.1rem;
+            margin-bottom: 35px;
+        }
+
+        .button-link {
+            background: linear-gradient(45deg, #007BFF, #00c6ff);
+            color: white;
+            padding: 18px 45px;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .button-link:hover {
+            background: linear-gradient(45deg, #0056b3, #007BFF);
+            transform: scale(1.05);
+            box-shadow: 0 12px 30px rgba(0, 123, 255, 0.6);
+        }
+
+        .button-link i {
+            transition: transform 0.3s;
+        }
+
+        .button-link:hover i {
+            transform: translateX(5px);
+        }
+
         /* Footer */
         footer {
             background: #0c1a2b;
             color: white;
             text-align: center;
-            padding: 20px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 40px 20px 100px; /* Added extra bottom padding for fixed positioning */
         }
 
         .terms-links a {
@@ -152,36 +224,12 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5rem;
-            }
-
-            section h2 {
-                font-size: 2rem;
-            }
-
-            article h3 {
-                font-size: 1.5rem;
-            }
-
-            .author-info {
-                flex-direction: column;
-                padding: 30px;
-            }
+            header h1 { font-size: 2.5rem; }
+            section h2 { font-size: 2rem; }
+            article h3 { font-size: 1.5rem; }
+            .author-info { padding: 30px; }
+            .redirect-card h3 { font-size: 1.8rem; }
         }
-background-color: #007BFF; /* Blue background */
-      color: white;             /* White text */
-      padding: 10px 20px;       /* Padding */
-      font-size: 16px;          /* Font size */
-      border: none;             /* Remove border */
-      border-radius: 5px;       /* Rounded corners */
-      cursor: pointer;          /* Pointer cursor on hover */
-      text-decoration: none;    /* Remove underline */
-      display: inline-block;    /* Inline-block for better alignment */
-    }
-    .button-link:hover {
-      background-color: #0056b3; /* Darker blue on hover */
-    }
     </style>
 </head>
 <body>
@@ -230,13 +278,26 @@ background-color: #007BFF; /* Blue background */
 
     <!-- Author Bio Section -->
     <div class="author-info">
-        <img src="author.jpg" alt="Arpit Aanand">
+        <img src="author.jpg" alt="Arpit Aanand" onerror="this.src='https://via.placeholder.com/180?text=Arpit+Aanand'">
         <div class="author-bio">
             <h3>About Arpit Aanand</h3>
             <p>Student, Author, Programmer, Web Developer</p>
             <p>Currently studying in Class 9 at A.D. Sarswati Vidya Mandir</p>
         </div>
     </div>
+
+    <!-- Contact Redirect Section (The Button at the end) -->
+    <div class="contact-redirect-segment">
+        <div class="redirect-card">
+            <h3>Have Questions?</h3>
+            <p>Feel free to reach out for collaborations or any networking queries.</p>
+            <a href="https://arpit01bgp.github.io/ContactUs/" target="_blank" rel="noopener noreferrer" class="button-link">
+                <span>Go to Contact Us</span>
+                <i class="fa-solid fa-paper-plane"></i>
+            </a>
+        </div>
+    </div>
+     
 
     <!-- Footer Section -->
     <footer>
@@ -246,359 +307,16 @@ background-color: #007BFF; /* Blue background */
         </div>
     </footer>
 
-    <!-- JavaScript for Dynamic Content Toggle -->
     <script>
         function toggleContent(article) {
-            const fullContent = article.querySelector('.full-content');
-            if (fullContent.style.display === "none") {
-                fullContent.style.display = "block";
-                article.style.height = "auto"; // Adjust article height to show full content
+            const content = article.querySelector('.full-content');
+            if (content.style.display === "none") {
+                content.style.display = "block";
             } else {
-                fullContent.style.display = "none";
-                article.style.height = "120px"; // Default height when collapsed
+                content.style.display = "none";
             }
         }
-       
-    </script>
-     
-     <!-- Button that opens another link -->
-  <a href="https://arpit01bgp.github.io/arpit/" class="button-link" target="_blank">My Presentation</a><br>
-  <br> <br> <br> <br> <Br><br>   
-     
-</body>
-     <body>
-
-    <!-- Particle Background -->
-    <canvas id="particles"></canvas>
-
-    <!-- Main Card -->
-    <div class="redirect-container">
-        <div class="icon-circle">
-            <i class="fa-solid fa-headset"></i>
-        </div>
-        <h2>Get In Touch</h2>
-        <p>We are here to help! Click the button below to visit our official contact portal and speak with our dedicated support team.</p>
-        
-        <!-- UPDATE THE LINK BELOW -->
-        <a href="https://your-contact-page-url.com" class="redirect-button">
-            <span>Go to Contact Us</span>
-            <i class="fa-solid fa-arrow-right"></i>
-        </a>
-    </div>
-
-    <script>
-        // --- BACKGROUND PARTICLE ANIMATION ---
-        const canvas = document.getElementById('particles');
-        const ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        let particlesArray = [];
-
-        class Particle {
-            constructor() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 2 + 1;
-                this.speedX = Math.random() * 0.8 - 0.4;
-                this.speedY = Math.random() * 0.8 - 0.4;
-                this.color = `rgba(0, 210, 255, ${Math.random() * 0.4 + 0.1})`;
-            }
-            update() {
-                this.x += this.speedX;
-                this.y += this.speedY;
-                if (this.x > canvas.width || this.x < 0) this.speedX = -this.speedX;
-                if (this.y > canvas.height || this.y < 0) this.speedY = -this.speedY;
-            }
-            draw() {
-                ctx.fillStyle = this.color;
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fill();
-            }
-        }
-
-        function init() {
-            particlesArray = [];
-            for (let i = 0; i < 100; i++) {
-                particlesArray.push(new Particle());
-            }
-        }
-
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            for (let i = 0; i < particlesArray.length; i++) {
-                particlesArray[i].update();
-                particlesArray[i].draw();
-                
-                for (let j = i; j < particlesArray.length; j++) {
-                    const dx = particlesArray[i].x - particlesArray[j].x;
-                    const dy = particlesArray[i].y - particlesArray[j].y;
-                    const distance = Math.sqrt(dx * dx + dy * dy);
-                    if (distance < 150) {
-                        ctx.beginPath();
-                        ctx.strokeStyle = `rgba(0, 210, 255, ${0.05 - distance/3000})`;
-                        ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
-                        ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
-                        ctx.stroke();
-                    }
-                }
-            }
-            requestAnimationFrame(animate);
-        }
-
-        window.addEventListener('resize', () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            init();
-        });
-
-        init();
-        animate();
-    </script>
-
-    <style>
-        /* --- RESET & CORE --- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background: #0f0c29;
-            background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            position: relative;
-        }
-
-        /* --- BACKGROUND PARTICLES --- */
-        #particles {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-        }
-
-        /* --- REDIRECT CARD STYLING --- */
-        .redirect-container {
-            position: relative;
-            z-index: 2;
-            width: 90%;
-            max-width: 600px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 30px;
-            padding: 60px 40px;
-            text-align: center;
-            backdrop-filter: blur(20px);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
-            transition: all 0.4s ease;
-        }
-
-        .redirect-container:hover {
-            transform: translateY(-10px);
-            border-color: rgba(0, 210, 255, 0.4);
-            box-shadow: 0 30px 60px rgba(0, 210, 255, 0.15);
-        }
-
-        /* Icon Glow Animation */
-        .icon-circle {
-            width: 80px;
-            height: 80px;
-            background: rgba(0, 210, 255, 0.1);
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto 25px;
-            font-size: 32px;
-            color: #00d2ff;
-            border: 1px solid rgba(0, 210, 255, 0.3);
-            box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(0, 210, 255, 0.4); }
-            70% { box-shadow: 0 0 0 20px rgba(0, 210, 255, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(0, 210, 255, 0); }
-        }
-
-        h2 {
-            color: #fff;
-            font-size: 32px;
-            margin-bottom: 15px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
-        }
-
-        p {
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 40px;
-        }
-
-        /* --- PREMIUM REDIRECT BUTTON --- */
-        .redirect-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 15px;
-            padding: 20px 50px;
-            background: linear-gradient(45deg, #00d2ff, #3a7bd5);
-            color: #fff;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 18px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 10px 25px rgba(0, 210, 255, 0.3);
-            position: relative;
-            overflow: hidden;
-            cursor: pointer;
-        }
-
-        .redirect-button i {
-            font-size: 20px;
-            transition: transform 0.3s;
-        }
-
-        .redirect-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 15px 35px rgba(0, 210, 255, 0.5);
-            background: linear-gradient(45deg, #3a7bd5, #00d2ff);
-        }
-
-        .redirect-button:hover i {
-            transform: translateX(5px);
-        }
-
-        /* Shine effect on button */
-        .redirect-button::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -60%;
-            width: 20%;
-            height: 200%;
-            background: rgba(255, 255, 255, 0.2);
-            transform: rotate(30deg);
-            transition: 0s;
-        }
-
-        .redirect-button:hover::after {
-            left: 120%;
-            transition: 0.7s;
-        }
-
-    </style>
-</head>
-<body>
-
-    <!-- Particle Background -->
-    <canvas id="particles"></canvas>
-
-    <!-- Main Card -->
-    <div class="redirect-container">
-        <div class="icon-circle">
-            <i class="fa-solid fa-headset"></i>
-        </div>
-        <h2>Get In Touch</h2>
-        <p>We are here to help! Click the button below to visit our official contact portal and speak with our dedicated support team.</p>
-        
-        <!-- FORCE OPEN IN NEW TAB -->
-        <a href="https://arpit01bgp.github.io/ContactUs/" target="_blank" rel="noopener noreferrer" class="redirect-button" id="contactBtn">
-            <span>Go to Contact Us</span>
-            <i class="fa-solid fa-arrow-right"></i>
-        </a>
-    </div>
-
-    <script>
-        // --- LINK FAIL-SAFE ---
-        // Ensure the link works even inside strictly controlled environments
-        document.getElementById('contactBtn').addEventListener('click', function(e) {
-            console.log("Redirecting to your ContactUs page...");
-        });
-
-        // --- BACKGROUND PARTICLE ANIMATION ---
-        const canvas = document.getElementById('particles');
-        const ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        let particlesArray = [];
-
-        class Particle {
-            constructor() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 2 + 1;
-                this.speedX = Math.random() * 0.8 - 0.4;
-                this.speedY = Math.random() * 0.8 - 0.4;
-                this.color = `rgba(0, 210, 255, ${Math.random() * 0.4 + 0.1})`;
-            }
-            update() {
-                this.x += this.speedX;
-                this.y += this.speedY;
-                if (this.x > canvas.width || this.x < 0) this.speedX = -this.speedX;
-                if (this.y > canvas.height || this.y < 0) this.speedY = -this.speedY;
-            }
-            draw() {
-                ctx.fillStyle = this.color;
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fill();
-            }
-        }
-
-        function init() {
-            particlesArray = [];
-            for (let i = 0; i < 100; i++) {
-                particlesArray.push(new Particle());
-            }
-        }
-
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            for (let i = 0; i < particlesArray.length; i++) {
-                particlesArray[i].update();
-                particlesArray[i].draw();
-                
-                for (let j = i; j < particlesArray.length; j++) {
-                    const dx = particlesArray[i].x - particlesArray[j].x;
-                    const dy = particlesArray[i].y - particlesArray[j].y;
-                    const distance = Math.sqrt(dx * dx + dy * dy);
-                    if (distance < 150) {
-                        ctx.beginPath();
-                        ctx.strokeStyle = `rgba(0, 210, 255, ${0.05 - distance/3000})`;
-                        ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
-                        ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
-                        ctx.stroke();
-                    }
-                }
-            }
-            requestAnimationFrame(animate);
-        }
-
-        window.addEventListener('resize', () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            init();
-        });
-
-        init();
-        animate();
+         
     </script>
 </body>
 </html>
